@@ -29,6 +29,7 @@ public class AlumnosController {
         return ResponseEntity.ok(Collections.singletonMap("message", "Se guardo"));
     }
 
+    //TODO Obtener alumno por id
     @GetMapping("/alumno/{id}")
     public ResponseEntity<?> obtenerAlumnoId(@PathVariable("id") Long id) {
         Optional<Alumnos> alumnos = alumnosService.obtenerAlumnoId(id);
